@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1678289399 source:c:\users\admin\desktop\banga\plane.cpp
+	"Plane.hpp"
+
+1678287868 c:\users\admin\desktop\banga\plane.hpp
+	"Game.hpp"
+	"Entity.h"
+	"Bullet.hpp"
+
+1678288293 c:\users\admin\desktop\banga\game.hpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_audio.h>
+
+1677772436 source:c:\users\admin\desktop\banga\texturemanager.cpp
+	"TextureManager.hpp"
+
+1677772436 c:\users\admin\desktop\banga\texturemanager.hpp
+	"Game.hpp"
+
+1678288309 source:c:\users\admin\desktop\banga\game.cpp
+	"Game.hpp"
+	"Plane.hpp"
+	"Bullet.hpp"
+
+1678289486 source:c:\users\admin\desktop\banga\main.cpp
+	"Game.hpp"
+
+1678288619 c:\users\admin\desktop\banga\bullet.hpp
+	"Game.hpp"
+	"Entity.h"
+
+1678287521 source:c:\users\admin\desktop\banga\bullet.cpp
+	"Bullet.hpp"
+
+1678172699 source:c:\users\admin\desktop\banga\object.cpp
+	"Object.h"
+
+1678172699 c:\users\admin\desktop\banga\object.h
+	<SDL.h>
+
+1678172699 source:c:\users\admin\desktop\banga\weapon.cpp
+	"Weapon.h"
+
+1678172699 c:\users\admin\desktop\banga\weapon.h
+	"Object.h"
+
+1678288293 source:c:\users\admin\desktop\banga\entity.cpp
+	"Entity.h"
+
+1678288293 c:\users\admin\desktop\banga\entity.h
+	<Game.hpp>
+
+1678290486 source:c:\users\admin\desktop\banga\source\bullet.cpp
+	"source/Bullet.hpp"
+
+1678290486 c:\users\admin\desktop\banga\source\bullet.hpp
+	"source/Game.hpp"
+	"source/Entity.h"
+
+1678288293 c:\users\admin\desktop\banga\source\game.hpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_audio.h>
+
+1678290486 c:\users\admin\desktop\banga\source\entity.h
+	"source/Game.hpp"
+
+1678290486 source:c:\users\admin\desktop\banga\source\entity.cpp
+	"source/Entity.h"
+
+1678290486 source:c:\users\admin\desktop\banga\source\game.cpp
+	"source/Game.hpp"
+	"source/Plane.hpp"
+	"source/Bullet.hpp"
+
+1678290486 c:\users\admin\desktop\banga\source\plane.hpp
+	"source/Game.hpp"
+	"source/Entity.h"
+	"source/Bullet.hpp"
+
+1678290486 source:c:\users\admin\desktop\banga\source\main.cpp
+	"source/Game.hpp"
+
+1678290486 source:c:\users\admin\desktop\banga\source\plane.cpp
+	"source/Plane.hpp"
+
