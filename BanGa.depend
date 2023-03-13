@@ -52,38 +52,51 @@
 1678288293 c:\users\admin\desktop\banga\entity.h
 	<Game.hpp>
 
-1678290486 source:c:\users\admin\desktop\banga\source\bullet.cpp
-	"source/Bullet.hpp"
+1678697399 source:c:\users\admin\desktop\banga\source\bullet.cpp
+	"Bullet.hpp"
 
-1678290486 c:\users\admin\desktop\banga\source\bullet.hpp
-	"source/Game.hpp"
-	"source/Entity.h"
+1678724638 c:\users\admin\desktop\banga\source\bullet.hpp
+	"Entity.h"
 
-1678288293 c:\users\admin\desktop\banga\source\game.hpp
+1678726169 c:\users\admin\desktop\banga\source\game.hpp
 	<bits/stdc++.h>
 	<SDL.h>
 	<SDL_image.h>
-	<SDL_audio.h>
+	<SDL_mixer.h>
 
-1678290486 c:\users\admin\desktop\banga\source\entity.h
-	"source/Game.hpp"
+1678724639 c:\users\admin\desktop\banga\source\entity.h
+	"Game.hpp"
 
-1678290486 source:c:\users\admin\desktop\banga\source\entity.cpp
-	"source/Entity.h"
+1678724639 source:c:\users\admin\desktop\banga\source\entity.cpp
+	"Entity.h"
 
-1678290486 source:c:\users\admin\desktop\banga\source\game.cpp
-	"source/Game.hpp"
-	"source/Plane.hpp"
-	"source/Bullet.hpp"
+1678726885 source:c:\users\admin\desktop\banga\source\game.cpp
+	"Game.hpp"
+	"Plane.hpp"
+	"Bullet.hpp"
+	"Chicken.hpp"
+	"Collision.h"
 
-1678290486 c:\users\admin\desktop\banga\source\plane.hpp
-	"source/Game.hpp"
-	"source/Entity.h"
-	"source/Bullet.hpp"
+1678724283 c:\users\admin\desktop\banga\source\plane.hpp
+	"Entity.h"
+	"Bullet.hpp"
 
-1678290486 source:c:\users\admin\desktop\banga\source\main.cpp
-	"source/Game.hpp"
+1678724291 source:c:\users\admin\desktop\banga\source\main.cpp
+	"Game.hpp"
 
-1678290486 source:c:\users\admin\desktop\banga\source\plane.cpp
-	"source/Plane.hpp"
+1678724282 source:c:\users\admin\desktop\banga\source\plane.cpp
+	"Plane.hpp"
+
+1678724746 source:c:\users\admin\desktop\banga\source\chicken.cpp
+	"Chicken.hpp"
+
+1678724639 c:\users\admin\desktop\banga\source\chicken.hpp
+	"Entity.h"
+	"Bullet.hpp"
+
+1678688656 source:c:\users\admin\desktop\banga\source\collision.cpp
+	"Collision.h"
+
+1678724639 c:\users\admin\desktop\banga\source\collision.h
+	<SDL.h>
 

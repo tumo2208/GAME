@@ -1,23 +1,30 @@
 #pragma once
 
-#include "source/Game.hpp"
+#include "Game.hpp"
 
 
 class Entity
 {
-public:
-    Entity();
-    virtual ~Entity();
 
-    void SetRect(const int& x, const int& y) {rect_.x = x, rect_.y = y;}
-    SDL_Rect GetRect() const {return rect_;}
-    void Show(SDL_Texture* texture_,SDL_Renderer* renderer);
+public:
+
+    Entity() {}
+    ~Entity() {}
+
+    void SetRect(const int& x, const int& y) {rect.x = x, rect.y = y;}
+    SDL_Rect GetRect() const {return rect;}
+    void Show(SDL_Texture* text,SDL_Renderer* ren);
+
+    int random() {
+        srand(time(NULL));
+        return ((rand() % 38)*20);
+    }
 
 
 protected:
 
-    SDL_Rect rect_;
-    SDL_Texture* p_object_;
+    SDL_Rect rect;
+    //SDL_Texture* p_object_;
 
 };
 

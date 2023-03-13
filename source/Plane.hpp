@@ -1,8 +1,7 @@
 #pragma once
 
-#include "source/Game.hpp"
-#include "source/Entity.h"
-#include "source/Bullet.hpp"
+#include "Entity.h"
+#include "Bullet.hpp"
 
 
 const int PLANE_WIDTH = 100;
@@ -21,16 +20,16 @@ public:
     ~Plane();
 
     void HandleInputPlane(SDL_Event &e);
-    void plane_display (SDL_Texture* texture, SDL_Renderer* renderer);
 
-    void SetBulletList(std::vector<Bullet*> bullet_list) {p_bullet_list_ = bullet_list;}
-    std::vector<Bullet*> GetBulletList() const {return p_bullet_list_;}
-    void MakeBullet( SDL_Renderer* renderer,SDL_Texture* texture_bullet);
-    void RemoveBullet(const int& idx);
+    //void SetBulletList(std::vector<Bullet*> Bullet_list) {bullet_list = Bullet_list;}
+    void SetBullet (SDL_Event &e);
+    std::vector<Bullet*> GetBulletList() const {return bullet_list;}
+    void MakeBullet( SDL_Renderer* ren,SDL_Texture* text);
+    //void RemoveBullet(const int& idx);
 
 
 private:
 
-    vector<Bullet*> p_bullet_list_;
+    vector<Bullet*> bullet_list;
 
 };

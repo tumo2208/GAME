@@ -1,13 +1,12 @@
-#include "source/Bullet.hpp"
+#include "Bullet.hpp"
 
 
 Bullet::Bullet()
 {
-  rect_.x = 0;
-  rect_.y = 0;
-  x_val_ = 0;
-  y_val_ = 0;
-  is_move_ = false;
+  rect.x = 0;
+  rect.y = 0;
+  xpos = ypos = 0;
+  isMove = false;
 }
 
 
@@ -17,15 +16,25 @@ Bullet::~Bullet()
 }
 
 
-void Bullet::HandleMove(const int& x_border, const int& y_border)
+void Bullet::BulletMove(const int& x_border, const int& y_border)
 {
-    if (is_move_ == true) {
+    if (isMove == true) {
 
-        rect_.y -= y_val_;
-        if (rect_.y < 0)
-            is_move_ = false;
+        rect.y -= BULLET_SPEED;
+        if (rect.y < 0)
+            isMove = false;
 
     }
+}
+
+
+void Bullet::EggMove(const int& x_border, const int& y_border)
+{
+
+    rect.y += EGG_SPEED;
+    if (rect.y > SCREEN_HEIGHT)
+        isMove = false;
+
 }
 
 

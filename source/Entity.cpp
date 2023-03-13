@@ -1,17 +1,9 @@
-#include "source/Entity.h"
+#include "Entity.h"
 
-Entity::Entity()
+
+void Entity::Show(SDL_Texture* text, SDL_Renderer* ren)
 {
 
-}
+    SDL_RenderCopy(ren, text, NULL, &rect);
 
-Entity::~Entity()
-{
-
-}
-
-
-void Entity::Show(SDL_Texture* texture_,SDL_Renderer* renderer)
-{
-    SDL_RenderCopy(renderer,texture_,NULL,&rect_);
 }

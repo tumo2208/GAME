@@ -4,12 +4,13 @@
 #include <bits/stdc++.h>
 #include <SDL.h>
 #include <SDL_image.h>
-#include <SDL_audio.h>
+#include <SDL_mixer.h>
 using namespace std;
 
 
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 769;
+const int SCREEN_MOVE_SPEED = 1;
 const string SCREEN_TITLE = "Ban Ga";
 
 
@@ -17,15 +18,15 @@ class Game {
 
 public:
 
-    Game();
-    ~Game();
+    Game() {}
+    ~Game() {}
+
+    SDL_Texture* loadIMG(const string path);
 
     void initSDL();
-    SDL_Texture* loadIMG (const string path);
-    void Clear() {SDL_RenderClear(ren);}
-    void update();
-    void Draw() {SDL_RenderPresent(ren);}
-    void EndLoop();
+
+    void Run();
+    void EndLoop(SDL_Event &e);
     void quitSDL();
 
     bool Running() {return isRunning;}
